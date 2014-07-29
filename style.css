@@ -1,18 +1,25 @@
 html {
 	padding:0;
-	margin:-10px;
+	margin-top:-10px;
 	background:#FAFAFA;
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	overflow-x:hidden;
 }
 
+/********************************************************************************/
+
 .header {
+	top:0;
+	position:fixed;
 	width:110%;
 	border-bottom:1px solid black;
 	margin-left:-5%;
-	box-shadow:0 0 10px #AAAAAA;
+	box-shadow:0 0 20px #AAAAAA;
+	background:#FAFAFA;
+	z-index:1;
 }
 
 .header .container {
@@ -26,19 +33,36 @@ body {
 }
 
 .navlogo {
-	height:125px;
+	height:110px;
 	margin-top:6px;
 }
 
 .navigation {
 	display:inline;
 	font-size:20px;
-	margin-left:20px;
+	padding:10px;
+	padding:10px;
+	position:relative;
+	bottom:10px;
+	border:0 solid black;
 }
 
+.navigation a{
+	text-decoration:none;
+	color:black;
+}
+
+.navigation:hover a{
+	text-decoration:none;
+	color:gold;
+}
+
+/********************************************************************************/
+
 .main {
+	z-index:2;
 	width:1000px;
-	margin: 24px auto 12px auto;
+	margin: 154px auto 12px auto;
 	background-color:#FFFFFF;
 	min-height:100vh;
 	border-radius:12px;
@@ -48,4 +72,19 @@ body {
 #mainphoto {
 	width:960px;
 	margin: 20px;
+}
+
+/********************************************************************************/
+
+.footer {
+	width:999px;
+	border:1px solid black;
+	position:absolute;
+	bottom:0;
+}
+
+.footer .container {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
 }
