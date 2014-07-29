@@ -19,7 +19,7 @@ body {
 	margin-left:-5%;
 	box-shadow:0 0 20px #AAAAAA;
 	background:#FAFAFA;
-	z-index:1;
+	z-index:15;
 }
 
 .header .container {
@@ -61,7 +61,7 @@ body {
 
 .main {
 	position:relative;
-	z-index:2;
+	z-index:14;
 	width:1000px;
 	margin: 154px auto 12px auto;
 	background-color:#FFFFFF;
