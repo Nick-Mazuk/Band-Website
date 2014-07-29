@@ -1,1 +1,51 @@
-/*Hello World*/
+html {
+	padding:0;
+	margin:-10px;
+	background:#FAFAFA;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+	width:110%;
+	border-bottom:1px solid black;
+	margin-left:-5%;
+	box-shadow:0 0 10px #AAAAAA;
+}
+
+.header .container {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.header .container .container {
+	display:inline;
+}
+
+.navlogo {
+	height:125px;
+	margin-top:6px;
+}
+
+.navigation {
+	display:inline;
+	font-size:20px;
+	margin-left:20px;
+}
+
+.main {
+	width:1000px;
+	margin: 24px auto 12px auto;
+	background-color:#FFFFFF;
+	min-height:100vh;
+	border-radius:12px;
+	box-shadow:0 0 10px #AAAAAA;
+}
+
+#mainphoto {
+	width:960px;
+	margin: 20px;
+}
