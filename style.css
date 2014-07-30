@@ -10,6 +10,22 @@ body {
 	overflow-x:hidden;
 }
 
+h2 {
+	margin:0;
+	margin-bottom:6px;
+	padding:0;
+	font-weight:normal;
+	font-size:18px;
+}
+
+h3 {
+	margin:0;
+	margin-bottom:6px;
+	padding:0;
+	font-weight:normal;
+	font-size:16px;
+}
+
 /********************************************************************************/
 
 .header {
@@ -45,7 +61,6 @@ body {
 	padding:10px;
 	position:relative;
 	bottom:10px;
-	border:0 solid black;
 }
 
 .navigation a{
@@ -78,6 +93,70 @@ body {
 #mainphoto {
 	width:960px;
 	margin: 20px;
+}
+
+#newsboardcontainer {
+	width:850px;
+	margin:16px auto 20px auto;
+}
+
+#newsboardcontainer h2 {
+	color:#666666;
+	text-align:center;
+}
+
+#newsboardcontainer h3 {
+	color:#888888;
+	text-align:center;
+	margin-bottom:12px;
+}
+
+#newsboardcontainer p {
+	color:#888888;
+	text-align:center;
+	font-size:14px;
+	margin:0 auto 0 auto;
+	padding:0;
+}
+
+.newsstory {
+	width:265px;
+	display:table-cell;
+}
+
+#story1, #story2 {
+	padding-right:23px;
+}
+
+.newsstory img {
+	max-width:100%;
+	max-height:146px;
+	overflow:hidden;
+	display:block;
+	margin:0 auto 12px auto;
+}
+
+.more {
+	margin-top:6px;
+	text-align:right;
+}
+
+.more a {
+	color:#888888;
+	text-align:center;
+	font-size:14px;
+	margin:0;
+	padding:0;
+	text-decoration:underline;
+}
+
+.more a:hover {
+	color:#AAAAAA;
+}
+
+#maincontainer hr {
+	width:90%;
+	margin:24px auto 24px auto;
 }
 
 /********************************************************************************/
