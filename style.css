@@ -71,6 +71,10 @@ body {
 	box-shadow:0 0 10px #AAAAAA;
 }
 
+#maincontainer {
+	padding-bottom:275px;
+}
+
 #mainphoto {
 	width:960px;
 	margin: 20px;
@@ -83,12 +87,12 @@ body {
 	position:absolute;
 	border-radius:12px;
 	bottom:0;
-	background-color:gray;
+	background-color:#989898;
 }
 
 #footerfiller {
 	height:12px;
-	background-color:gray;
+	background-color:#989898;
 }
 
 .footer .container {
@@ -109,6 +113,16 @@ body {
 	margin-bottom:0;
 	margin-top:10px;
 	font-size:12px;
+	color:#000000;
+}
+
+#footertable a:hover {
+	color:#DDDDDD;
+}
+
+#footertable a {
+	color:#000000;
+	text-decoration:none;
 }
 
 #footertable .footerheader {
@@ -117,10 +131,37 @@ body {
 	margin-top:0px;
 	margin-bottom:4px;
 	font-size:16px;
+	color:#000000;
 }
 
 #addimage {
 	max-width:100%;
 	max-height:150px;
 	margin:10px auto 0 auto;
+	text-align:center;
+	display:block;
+}
+
+#copyright {
+	font-size:12px;
+	padding-top:3px;
+	padding-bottom:6px;
+}
+
+.bottomfooter {
+	margin-top:18px;
+	border-top:1px solid #000000;
+	margin-bottom:22px;
+}
+
+.socialmediaicon {
+	margin-top:12px;
+	max-width:25px;
+	max-height:25px;
+	margin-left:6px;
+	opacity:0.7;
+}
+
+.socialmediaicon:hover {
+	opacity:1;
 }
