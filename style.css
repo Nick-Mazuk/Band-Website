@@ -61,6 +61,7 @@ h3 {
 	padding:10px;
 	position:relative;
 	bottom:10px;
+	position:relative;
 }
 
 .navigation a{
@@ -73,11 +74,32 @@ h3 {
 	color:gold;
 }
 
+.navigation ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	border:1px solid #000000;
+	top:-50px;
+	z-index:13;
+}
+
+.navigation ul li {
+	list-style:none;
+	margin:0;
+	padding:6px 12px;
+	text-align:center;
+	min-width:100px;
+	position:absolute;
+	border:1px solid #000000;
+	display:list-item;
+}
+
 /********************************************************************************/
 
 .main {
 	position:relative;
-	z-index:14;
+	z-index:13;
 	width:1000px;
 	margin: 154px auto 16px auto;
 	background-color:#FFFFFF;
@@ -90,14 +112,55 @@ h3 {
 	padding-bottom:275px;
 }
 
-#mainphoto {
+#mainphotocontainer {
+	top:0px;
+}
+#mainphotocontainer .mainphoto {
+	position:absolute;
+	top:0;
+	-webkit-animation-name: fade;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 40s;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	animation-duration: 40s;
 	width:960px;
 	margin: 20px;
+}
+
+@-webkit-keyframes fade {
+	0% {opacity: 1;}
+	21% {opacity: 1;}
+	25% {opacity: 0;}
+	53% {opacity: 0;}
+	96% {opacity: 0;}
+}
+@keyframes fade {
+	0% {opacity: 1;}
+	21% {opacity: 1;}
+	25% {opacity: 0;}
+	53% {opacity: 0;}
+	96% {opacity: 0;}
+}
+
+#photo2 {
+	-webkit-animation-delay: -10s;
+	animation-delay: -10s;
+}
+#photo3 {
+	-webkit-animation-delay: -20s;
+	animation-delay: -20s;
+}
+
+#photo4 {
+	-webkit-animation-delay: -30s;
+	animation-delay: -30s;
 }
 
 #newsboardcontainer {
 	width:850px;
 	margin:8px auto 20px auto;
+	padding-top:420px;
 }
 
 #newsboardcontainer h2 {
