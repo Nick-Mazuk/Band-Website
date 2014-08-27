@@ -1,7 +1,9 @@
 html {
 	padding:0;
-	margin-top:-10px;
-	background:#0000FF;
+	margin:0;
+	background-image: url(Pictures/Background.png);
+	background-size: 100vw 100vh;
+	background-attachment:fixed;
 	font-size:16px;
 }
 
@@ -29,12 +31,10 @@ h3 {
 /********************************************************************************/
 
 .header {
-	position:fixed;
 	top:0;
-	width:110%;
+	left:0;
+	right:0;
 	border-bottom:1px solid black;
-	margin-left:-5%;
-	box-shadow:0 0 20px #888888;
 	background:#FAFAFA;
 	z-index:15;
 }
@@ -101,7 +101,7 @@ h3 {
 	position:relative;
 	z-index:13;
 	width:1000px;
-	margin: 154px auto 16px auto;
+	margin: 0 auto 10px auto;
 	background-color:#FFFFFF;
 	min-height:100vh;
 }
