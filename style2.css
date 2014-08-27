@@ -1,7 +1,7 @@
 html {
 	padding:0;
 	margin-top:-10px;
-	background:#FAFAFA;
+	background:#0000FF;
 	font-size:16px;
 }
 
@@ -104,8 +104,6 @@ h3 {
 	margin: 154px auto 16px auto;
 	background-color:#FFFFFF;
 	min-height:100vh;
-	border-radius:12px;
-	box-shadow:0 0 10px #AAAAAA;
 }
 
 #maincontainer {
@@ -227,7 +225,6 @@ h3 {
 .footer {
 	width:100%;
 	position:absolute;
-	border-radius:12px;
 	bottom:0;
 	background-color:#989898;
 }
