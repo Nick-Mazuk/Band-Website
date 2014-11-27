@@ -32,12 +32,8 @@ h3 {
 /********************************************************************************/
 
 .header {
-	top:0;
-	left:0;
-	right:0;
 	border-bottom:1px solid black;
 	background:#FAFAFA;
-	z-index:15;
 }
 
 .header .container {
@@ -55,26 +51,72 @@ h3 {
 	margin-top:6px;
 }
 
-.navigation {
-	display:inline;
+nav {
+	display:inline-table;
 	font-size:20px;
 	padding:10px;
 	padding:10px;
 	position:relative;
 	bottom:10px;
+	top:3px;
+	z-index:15;
+}
+
+nav a {
+	text-decoration:none;
+	color: #000000;
+}
+
+nav ul {
+	display:inline-table;
+	text-align:center;
 	position:relative;
+	list-style:none;
+	padding:0;
+	margin:0;
 }
 
-.navigation a{
-	text-decoration:none;
-	color:black;
+nav ul ul {
+	display:block;
+	height:0;
+	overflow:hidden;
+	background-color:#FAFAFA;
+	margin:0;
+	padding:0;
+	text-align:left;
+	position:absolute;
+	top:100%;
+	left:0;
 }
 
-.navigation:hover a{
-	text-decoration:none;
+nav ul li:hover > ul {
+	height:auto;
+}
+
+nav ul li:hover > a {
 	color:gold;
 }
 
+nav ul li {
+	float:left;
+	width:auto;
+	padding-left:12px;
+	padding-right:14px;
+}
+
+nav ul ul li {
+	float:none;
+	position:relative;
+}
+
+nav ul ul ul {
+	position:relative;
+	left:100%;
+	top:0;
+}
+
+/*******/
+/*
 .navigation ul {
 	list-style:none;
 	margin:0;
@@ -94,13 +136,12 @@ h3 {
 	position:absolute;
 	border:1px solid #000000;
 	display:list-item;
-}
+}*/
 
 /********************************************************************************/
 
 .main {
 	position:relative;
-	z-index:13;
 	width:1000px;
 	margin: 0 auto 10px auto;
 	background-color:#FFFFFF;
@@ -112,7 +153,7 @@ h3 {
 }
 
 #mainphotocontainer {
-	top:0px;
+	position:relative;
 }
 #mainphotocontainer .mainphoto {
 	position:absolute;
