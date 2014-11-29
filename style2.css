@@ -1,6 +1,7 @@
 html {
 	padding:0;
 	margin:0;
+	background-color:#0000FF;
 	background-image: url(Pictures/Background.png);
 	background-image: url(Pictures/Background.png);
 	background-size: 100vw 100%;
@@ -34,37 +35,31 @@ h3 {
 .header {
 	border-bottom:1px solid black;
 	background:#FAFAFA;
+	width:100%;
 }
 
 .header .container {
 	width:1000px;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.header .container .container {
-	display:inline;
-}
-
-.navlogo {
-	height:110px;
-	margin-top:6px;
 }
 
 nav {
 	display:inline-table;
 	font-size:20px;
-	padding:10px;
-	padding:10px;
+	padding-top:10px;
 	position:relative;
 	bottom:10px;
 	top:3px;
 	z-index:15;
+	width:100%;
 }
 
 nav a {
 	text-decoration:none;
 	color: #000000;
+}
+
+nav a:hover, nav li:hover > a {
+	color:gold;
 }
 
 nav ul {
@@ -76,37 +71,71 @@ nav ul {
 	margin:0;
 }
 
+nav > ul {
+	margin-left:-1px;
+}
+
 nav ul ul {
 	display:block;
 	height:0;
 	overflow:hidden;
-	background-color:#FAFAFA;
 	margin:0;
 	padding:0;
-	text-align:left;
 	position:absolute;
 	top:100%;
-	left:0;
+	margin-left:-16px;
 }
 
 nav ul li:hover > ul {
 	height:auto;
 }
 
-nav ul li:hover > a {
-	color:gold;
-}
-
 nav ul li {
 	float:left;
-	width:auto;
-	padding-left:12px;
-	padding-right:14px;
+	min-width:130px;
+	padding: 0 16px 0px 16px;
+}
+
+nav ul li a {
+	display:block;
 }
 
 nav ul ul li {
 	float:none;
 	position:relative;
+	padding:6px;
+	min-width:126px;
+	padding-left:18px;
+	padding-right:18px;
+	background-color:#FAFAFA;
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+}
+
+#eventsNav {
+	min-width: 190px;
+}
+
+#resourceNav {
+	position:absolute;
+	right:0;
+	margin-right:-3px;
+}
+
+nav ul li:hover ul {
+	border-bottom:1px solid #000000;
+}
+
+/*
+nav ul ul a:hover li {
+	background:#F5F5F5;
+}
+*/
+
+nav ul ul a:nth-child(1) li {
+	background-image: url(Pictures/Nav%20Background.png);
+	background-size: 100% 100%;
+	margin-top:3px;
 }
 
 nav ul ul ul {
@@ -114,29 +143,6 @@ nav ul ul ul {
 	left:100%;
 	top:0;
 }
-
-/*******/
-/*
-.navigation ul {
-	list-style:none;
-	margin:0;
-	padding:0;
-	position:absolute;
-	border:1px solid #000000;
-	top:-50px;
-	z-index:13;
-}
-
-.navigation ul li {
-	list-style:none;
-	margin:0;
-	padding:6px 12px;
-	text-align:center;
-	min-width:100px;
-	position:absolute;
-	border:1px solid #000000;
-	display:list-item;
-}*/
 
 /********************************************************************************/
 
@@ -154,7 +160,12 @@ nav ul ul ul {
 
 #mainphotocontainer {
 	position:relative;
+	width:1000px;
+	height:250px;
+	overflow:hidden;
+	display:block;
 }
+
 #mainphotocontainer .mainphoto {
 	position:absolute;
 	top:0;
@@ -164,8 +175,9 @@ nav ul ul ul {
 	animation-name: fade;
 	animation-iteration-count: infinite;
 	animation-duration: 40s;
-	width:960px;
-	margin: 20px;
+	min-width:1000px;
+	min-height:250px;
+	margin: 0px;
 }
 
 @-webkit-keyframes fade {
@@ -197,10 +209,16 @@ nav ul ul ul {
 	animation-delay: -30s;
 }
 
+#ESBand {
+	position:absolute;
+	width:250px;
+	bottom:0;
+	right:0;
+}
+
 #newsboardcontainer {
 	width:850px;
-	margin:8px auto 20px auto;
-	padding-top:420px;
+	margin:40px auto 20px auto;
 }
 
 #newsboardcontainer h2 {

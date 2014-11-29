@@ -1,3 +1,5 @@
+window.addEventListener("load", function(){onload();});
+
 var onload = function() {
 
 	function setImg(){

@@ -54,45 +54,71 @@ h3 {
 	margin-top:6px;
 }
 
-.navigation {
-	display:inline;
+nav {
+	display:inline-table;
 	font-size:20px;
 	padding:10px;
 	padding:10px;
 	position:relative;
 	bottom:10px;
+	top:3px;
+	z-index:15;
+}
+
+nav a {
+	text-decoration:none;
+	color: #000000;
+}
+
+nav ul {
+	display:inline-table;
+	text-align:center;
 	position:relative;
-}
-
-.navigation a{
-	text-decoration:none;
-	color:black;
-}
-
-.navigation:hover a{
-	text-decoration:none;
-	color:#0000FF;
-}
-
-.navigation ul {
 	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+nav ul ul {
+	display:block;
+	height:0;
+	overflow:hidden;
+	background-color:#FAFAFA;
 	margin:0;
 	padding:0;
+	text-align:left;
 	position:absolute;
-	border:1px solid #000000;
-	top:-50px;
-	z-index:13;
+	top:100%;
+	left:0;
 }
 
-.navigation ul li {
-	list-style:none;
-	margin:0;
-	padding:6px 12px;
-	text-align:center;
-	min-width:100px;
-	position:absolute;
-	border:1px solid #000000;
-	display:list-item;
+nav ul li:hover > ul {
+	height:auto;
+}
+
+nav ul li:hover > a {
+	color:gold;
+}
+
+nav ul li {
+	float:left;
+	width:auto;
+	padding-left:12px;
+	padding-right:14px;
+}
+
+nav ul ul li {
+	float:none;
+	position:relative;
+	padding:6px;
+	min-width:200px;
+	padding-left:18px;
+}
+
+nav ul ul ul {
+	position:relative;
+	left:100%;
+	top:0;
 }
 
 /********************************************************************************/
