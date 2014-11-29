@@ -49,7 +49,7 @@ nav {
 	position:relative;
 	bottom:10px;
 	top:3px;
-	z-index:15;
+	z-index:2;
 	width:100%;
 }
 
@@ -69,31 +69,38 @@ nav ul {
 	list-style:none;
 	padding:0;
 	margin:0;
-}
-
-nav > ul {
-	margin-left:-1px;
+	z-index:1;
 }
 
 nav ul ul {
 	display:block;
-	height:0;
 	overflow:hidden;
 	margin:0;
+	margin-top:-200px;
 	padding:0;
 	position:absolute;
 	top:100%;
 	margin-left:-16px;
+	transition:margin-top 0.3s ease-out;
+	border-bottom:1px solid #000000;
+	z-index:-1;
 }
 
 nav ul li:hover > ul {
 	height:auto;
+	margin-top:0;
+	transition:margin-top 0.3s ease-out;
 }
+
+/*******Fix the Easing problem********/
 
 nav ul li {
 	float:left;
 	min-width:130px;
-	padding: 0 16px 0px 16px;
+	padding: 20px 16px 2px 16px;
+	background-color:#FAFAFA;
+	margin-top:-20px;
+	margin-bottom:-2px;
 }
 
 nav ul li a {
@@ -104,12 +111,13 @@ nav ul ul li {
 	float:none;
 	position:relative;
 	padding:6px;
-	min-width:126px;
-	padding-left:18px;
-	padding-right:18px;
+	min-width:130px;
+	padding-left:16px;
+	padding-right:16px;
 	background-color:#FAFAFA;
 	border-left:1px solid #000000;
 	border-right:1px solid #000000;
+	margin:0;
 }
 
 #eventsNav {
@@ -118,12 +126,8 @@ nav ul ul li {
 
 #resourceNav {
 	position:absolute;
-	right:0;
+	right:2px;
 	margin-right:-3px;
-}
-
-nav ul li:hover ul {
-	border-bottom:1px solid #000000;
 }
 
 /*
@@ -164,20 +168,25 @@ nav ul ul ul {
 	height:250px;
 	overflow:hidden;
 	display:block;
+	z-index: 3;
+	background-color:#FAFAFA;
+}
+
+#mainphotocontainer .photo {
+	position:absolute;
+	top:0;
+	min-width:1000px;
+	min-height:250px;
+	margin: 0px;
 }
 
 #mainphotocontainer .mainphoto {
-	position:absolute;
-	top:0;
 	-webkit-animation-name: fade;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-duration: 40s;
 	animation-name: fade;
 	animation-iteration-count: infinite;
 	animation-duration: 40s;
-	min-width:1000px;
-	min-height:250px;
-	margin: 0px;
 }
 
 @-webkit-keyframes fade {
@@ -218,7 +227,7 @@ nav ul ul ul {
 
 #newsboardcontainer {
 	width:850px;
-	margin:40px auto 20px auto;
+	margin:20px auto 20px auto;
 }
 
 #newsboardcontainer h2 {
