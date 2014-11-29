@@ -55,19 +55,22 @@ h3 {
 }
 
 nav {
-	display:inline-table;
+	display:inline-block;
 	font-size:20px;
-	padding:10px;
-	padding:10px;
+	padding-top:10px;
 	position:relative;
 	bottom:10px;
 	top:3px;
-	z-index:15;
+	z-index:2;
 }
 
 nav a {
 	text-decoration:none;
 	color: #000000;
+}
+
+nav a:hover, nav li:hover > a {
+	color:gold;
 }
 
 nav ul {
@@ -77,48 +80,60 @@ nav ul {
 	list-style:none;
 	padding:0;
 	margin:0;
+	z-index:1;
 }
 
 nav ul ul {
 	display:block;
-	height:0;
 	overflow:hidden;
-	background-color:#FAFAFA;
-	margin:0;
-	padding:0;
-	text-align:left;
+	margin-top:-200px;
 	position:absolute;
 	top:100%;
-	left:0;
+	margin-left:-16px;
+	transition:margin-top 0.3s ease-out;
+	border-bottom:1px solid #000000;
+	z-index:-1;
 }
 
 nav ul li:hover > ul {
-	height:auto;
-}
-
-nav ul li:hover > a {
-	color:gold;
+	margin-top:0;
+	transition:margin-top 0.3s ease-out;
 }
 
 nav ul li {
 	float:left;
-	width:auto;
-	padding-left:12px;
-	padding-right:14px;
+	min-width:10px;
+	padding: 200px 14px 2px 14px;
+	background-color:#FAFAFA;
+	margin-top:-200px;
+	margin-bottom:-2px;
 }
 
 nav ul ul li {
+	text-align:left;
 	float:none;
-	position:relative;
 	padding:6px;
-	min-width:200px;
-	padding-left:18px;
+	padding-left:16px;
+	padding-right:16px;
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+	margin:0;
 }
 
-nav ul ul ul {
-	position:relative;
-	left:100%;
-	top:0;
+#homeNav {
+	margin-left:0;
+}
+
+#resourceNav {
+	position:absolute;
+	right:2px;
+	margin-right:-2px;
+}
+
+nav ul ul a:nth-child(1) li {
+	background-image: url(Pictures/Nav%20Background.png);
+	background-size: 100% 100%;
+	margin-top:3px;
 }
 
 /********************************************************************************/

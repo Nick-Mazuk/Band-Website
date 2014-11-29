@@ -43,14 +43,12 @@ h3 {
 }
 
 nav {
-	display:inline-table;
 	font-size:20px;
 	padding-top:10px;
 	position:relative;
 	bottom:10px;
 	top:3px;
 	z-index:2;
-	width:100%;
 }
 
 nav a {
@@ -75,9 +73,7 @@ nav ul {
 nav ul ul {
 	display:block;
 	overflow:hidden;
-	margin:0;
 	margin-top:-200px;
-	padding:0;
 	position:absolute;
 	top:100%;
 	margin-left:-16px;
@@ -87,12 +83,9 @@ nav ul ul {
 }
 
 nav ul li:hover > ul {
-	height:auto;
 	margin-top:0;
 	transition:margin-top 0.3s ease-out;
 }
-
-/*******Fix the Easing problem********/
 
 nav ul li {
 	float:left;
@@ -103,18 +96,11 @@ nav ul li {
 	margin-bottom:-2px;
 }
 
-nav ul li a {
-	display:block;
-}
-
 nav ul ul li {
 	float:none;
-	position:relative;
 	padding:6px;
-	min-width:130px;
 	padding-left:16px;
 	padding-right:16px;
-	background-color:#FAFAFA;
 	border-left:1px solid #000000;
 	border-right:1px solid #000000;
 	margin:0;
@@ -130,22 +116,10 @@ nav ul ul li {
 	margin-right:-3px;
 }
 
-/*
-nav ul ul a:hover li {
-	background:#F5F5F5;
-}
-*/
-
 nav ul ul a:nth-child(1) li {
 	background-image: url(Pictures/Nav%20Background.png);
 	background-size: 100% 100%;
 	margin-top:3px;
-}
-
-nav ul ul ul {
-	position:relative;
-	left:100%;
-	top:0;
 }
 
 /********************************************************************************/
@@ -172,7 +146,7 @@ nav ul ul ul {
 	background-color:#FAFAFA;
 }
 
-#mainphotocontainer .photo {
+#mainphotocontainer > img {
 	position:absolute;
 	top:0;
 	min-width:1000px;
@@ -221,8 +195,8 @@ nav ul ul ul {
 #ESBand {
 	position:absolute;
 	width:250px;
-	bottom:0;
-	right:0;
+	bottom:8px;
+	right:12px;
 }
 
 #newsboardcontainer {
