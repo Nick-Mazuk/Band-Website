@@ -103,7 +103,7 @@ nav ul li:hover > ul {
 nav ul li {
 	float:left;
 	min-width:10px;
-	padding: 200px 14px 2px 14px;
+	padding: 200px 13px 2px 13px;
 	background-color:#FAFAFA;
 	margin-top:-200px;
 	margin-bottom:-2px;
@@ -113,21 +113,26 @@ nav ul ul li {
 	text-align:left;
 	float:none;
 	padding:6px;
-	padding-left:16px;
-	padding-right:16px;
+	padding-left:13px;
+	padding-right:13px;
 	border-left:1px solid #000000;
 	border-right:1px solid #000000;
 	margin:0;
 }
 
 #homeNav {
-	margin-left:0;
+	margin-left:-13px;
 }
 
 #resourceNav {
 	position:absolute;
-	right:2px;
-	margin-right:-2px;
+	right:0;
+	margin-right:0px;
+	
+}
+
+#resourceNav a li {
+	text-align:right;
 }
 
 nav ul ul a:nth-child(1) li {
